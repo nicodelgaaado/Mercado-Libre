@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oskar Julian Ortiz Ortiz | Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.16.0/devicon.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        mlblue: {
+                            400: '#1d4ed8',
+                            500: '#003DA5',
+                            600: '#002f80'
+                        },
+                        mlyellow: {
+                            300: '#ffe066',
+                            400: '#FFD700'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.8s ease-out forwards',
+                        'slide-up': 'slideUp 0.8s ease-out forwards'
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' }
+                        },
+                        slideUp: {
+                            '0%': { opacity: '0', transform: 'translateY(24px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        }
+                    }
+                }
+            }
+        };
+    </script>
+    <style>
+        body {
+            background: #0b1220;
+            color: #e5e7eb;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #FFD700 0%, #facc15 45%, #60a5fa 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .card-glow:hover {
+            box-shadow: 0 0 30px rgba(0, 61, 165, 0.35);
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <nav class="fixed w-full z-50 bg-[#050b17]/80 backdrop-blur-lg border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="./index.html" class="text-2xl font-bold text-mlyellow-400">OO</a>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#hero" class="text-gray-300 hover:text-mlyellow-300 transition-colors">Inicio</a>
+                <a href="#servicios" class="text-gray-300 hover:text-mlyellow-300 transition-colors">Servicios</a>
+                <a href="#stack" class="text-gray-300 hover:text-mlyellow-300 transition-colors">Stack</a>
+                <a href="#proyectos" class="text-gray-300 hover:text-mlyellow-300 transition-colors">Proyectos</a>
+            </div>
+            <a href="https://github.com" target="_blank" class="bg-mlblue-500 hover:bg-mlblue-400 px-5 py-2 rounded-full text-white font-semibold transition-all">
+                GitHub
+            </a>
+        </div>
+    </nav>
+
+    <section id="hero" class="min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(0,61,165,0.24)_0%,_transparent_52%)]"></div>
+        <div class="absolute right-0 top-20 w-96 h-96 bg-mlyellow-400/10 rounded-full blur-3xl"></div>
+
+        <div class="max-w-7xl mx-auto px-6 py-28 grid lg:grid-cols-2 gap-12 items-center">
+            <div class="text-center lg:text-left order-2 lg:order-1 animate-slide-up">
+                <span class="inline-block px-4 py-2 text-sm rounded-full bg-mlblue-500/20 border border-mlblue-400/30 text-blue-200 mb-6">
+                    Frontend + UI Engineering
+                </span>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-5 leading-tight">
+                    Soy <span class="gradient-text">Oskar Julian Ortiz Ortiz</span>
+                </h1>
+                <p class="text-xl text-gray-300 mb-4 font-medium">
+                    Developer | AWS Cloud | Java | JavaScript | Python | TypeScript
+                </p>
+                <p class="text-gray-400 text-lg mb-8 max-w-xl mx-auto lg:mx-0">
+                    Construyo soluciones web escalables y orientadas a producto. Tengo experiencia en AWS Cloud,
+                    desarrollo con Java y lenguajes modernos para frontend y backend.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <a href="#proyectos" class="bg-mlyellow-400 hover:bg-mlyellow-300 text-mlblue-600 px-8 py-4 rounded-full font-bold transition-all">
+                        Ver proyectos
+                    </a>
+                    <a href="#contacto" class="border border-mlyellow-400/40 hover:bg-mlyellow-400/10 px-8 py-4 rounded-full font-semibold transition-all">
+                        Contactarme
+                    </a>
+                </div>
+            </div>
+
+            <div class="order-1 lg:order-2 flex justify-center animate-fade-in">
+                <div class="relative">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-mlblue-500/45 to-mlyellow-400/30 rounded-3xl blur-2xl"></div>
+                    <div class="relative w-72 h-72 md:w-96 md:h-96 rounded-3xl overflow-hidden border-4 border-mlyellow-400/35 shadow-2xl">
+                        <img src="../img/young-smiling-man-buying-internet-holding-credit-card-paying-purchase-with-laptop-standing-blue-background.jpg" alt="Avatar Oskar Julian Ortiz Ortiz" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="absolute -bottom-4 -right-4 px-4 py-2 rounded-xl bg-[#091427]/90 border border-mlyellow-400/30 text-mlyellow-300 font-semibold">
+                        Disponible para proyectos
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="py-24 bg-[#060d1b]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-14">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Mis <span class="gradient-text">Servicios</span></h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Soluciones de desarrollo web y cloud enfocadas en escalabilidad, rendimiento y calidad.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-7">
+                <article class="p-7 rounded-2xl bg-[#0d1a31]/60 border border-white/10 hover:border-mlyellow-400/50 transition-all card-glow">
+                    <i class="devicon-react-original text-4xl text-mlyellow-300"></i>
+                    <h3 class="text-xl font-bold mt-4 mb-2 text-white">Arquitectura Cloud en AWS</h3>
+                    <p class="text-gray-400">Implementacion de servicios en AWS Cloud con buenas practicas de despliegue y escalabilidad.</p>
+                </article>
+                <article class="p-7 rounded-2xl bg-[#0d1a31]/60 border border-white/10 hover:border-mlyellow-400/50 transition-all card-glow">
+                    <i class="devicon-java-plain text-4xl text-mlyellow-300"></i>
+                    <h3 class="text-xl font-bold mt-4 mb-2 text-white">Desarrollo con Java</h3>
+                    <p class="text-gray-400">Construccion de aplicaciones robustas con Java y enfoque en mantenibilidad.</p>
+                </article>
+                <article class="p-7 rounded-2xl bg-[#0d1a31]/60 border border-white/10 hover:border-mlyellow-400/50 transition-all card-glow">
+                    <i class="devicon-git-plain text-4xl text-mlyellow-300"></i>
+                    <h3 class="text-xl font-bold mt-4 mb-2 text-white">Trabajo Colaborativo</h3>
+                    <p class="text-gray-400">Flujos de trabajo con Git y colaboracion en equipos de desarrollo con enfoque profesional.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="stack" class="py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-14">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Tech <span class="gradient-text">Stack</span></h2>
+                <p class="text-gray-400">Herramientas que uso diariamente en proyectos de producto.</p>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-5">
+                <div class="p-5 rounded-xl bg-[#0d1a31]/60 border border-white/10 text-center"><i class="devicon-amazonwebservices-plain text-4xl text-mlyellow-300"></i><p class="mt-2 text-sm text-gray-300">AWS Cloud</p></div>
+                <div class="p-5 rounded-xl bg-[#0d1a31]/60 border border-white/10 text-center"><i class="devicon-java-plain text-4xl text-mlyellow-300"></i><p class="mt-2 text-sm text-gray-300">Java</p></div>
+                <div class="p-5 rounded-xl bg-[#0d1a31]/60 border border-white/10 text-center"><i class="devicon-javascript-plain text-4xl text-mlyellow-300"></i><p class="mt-2 text-sm text-gray-300">JavaScript</p></div>
+                <div class="p-5 rounded-xl bg-[#0d1a31]/60 border border-white/10 text-center"><i class="devicon-python-plain text-4xl text-mlyellow-300"></i><p class="mt-2 text-sm text-gray-300">Python</p></div>
+                <div class="p-5 rounded-xl bg-[#0d1a31]/60 border border-white/10 text-center"><i class="devicon-typescript-plain text-4xl text-mlyellow-300"></i><p class="mt-2 text-sm text-gray-300">TypeScript</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos" class="py-24 bg-[#060d1b]">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Proyectos <span class="gradient-text">Destacados</span></h2>
+            <p class="text-gray-400 max-w-2xl mx-auto mb-10">Repositorio con practicas de frontend, integraciones API y componentes UI reutilizables.</p>
+            <a href="https://github.com" target="_blank" class="inline-flex items-center gap-3 px-8 py-4 rounded-2xl bg-mlblue-500 hover:bg-mlblue-400 transition-all font-semibold">
+                <i class="devicon-github-original text-2xl"></i>
+                Ver GitHub
+            </a>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-20">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-3">Trabajemos juntos</h2>
+            <p class="text-gray-400 mb-6">Disponible para colaborar en productos web y equipos frontend.</p>
+            <a href="mailto:oskar@example.com" class="inline-block px-8 py-4 rounded-full bg-mlyellow-400 text-mlblue-600 font-bold hover:bg-mlyellow-300 transition-all">Enviar correo</a>
+        </div>
+    </section>
+
+    <footer class="py-10 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-gray-500">© 2026 Oskar Julian Ortiz Ortiz. Todos los derechos reservados.</p>
+            <a href="./index.html" class="text-mlyellow-300 hover:text-mlyellow-400 transition-colors">Volver al listado de portafolios</a>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+            anchor.addEventListener('click', (event) => {
+                event.preventDefault();
+                const target = document.querySelector(anchor.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
