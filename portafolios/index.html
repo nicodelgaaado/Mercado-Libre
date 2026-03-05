@@ -3,8 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolios</title>
+    <title>Portafolios | Equipo de Desarrollo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        violet: {
+                            50: '#f5f3ff',
+                            100: '#ede9fe',
+                            200: '#ddd6fe',
+                            300: '#c4b5fd',
+                            400: '#a78bfa',
+                            500: '#8b5cf6',
+                            600: '#7c3aed',
+                            700: '#6d28d9',
+                            800: '#5b21b6',
+                            900: '#4c1d95',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0f0f0f;
+            color: #f5f5f5;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #8b5cf6 0%, #c084fc 50%, #8b5cf6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(139, 92, 246, 0.2);
+        }
+    </style>
 </head>
-<body>
+<body class="antialiased min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-black/80 backdrop-blur-lg border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="../index.html" class="text-2xl font-bold text-white">Mercado Libre</a>
+            <a href="../index.html" class="text-gray-300 hover:text-violet-400 transition-colors">
+                ← Volver al inicio
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="min-h-screen flex items-center justify-center pt-20">
+        <div class="max-w-4xl mx-auto px-6 py-12">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">
+                    Nuestro <span class="gradient-text">Equipo de Desarrollo</span>
+                </h1>
+                <p class="text-gray-400 text-lg">
+                    Conoce a los talentosos desarrolladores detrás de nuestras soluciones
+                </p>
+            </div>
+            
+            <!-- Portafolios Grid -->
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Portafolio 1 - Diery Valencia -->
+                <a href="portafolio-3.html" class="group bg-gray-900/50 border border-white/10 rounded-2xl overflow-hidden hover:border-violet-500/50 transition-all duration-300 card-hover">
+                    <div class="h-48 bg-gradient-to-br from-violet-900/30 to-purple-900/30 flex items-center justify-center">
+                        <div class="w-24 h-24 rounded-full overflow-hidden border-4 border-violet-500/30">
+                            <img src="../img/dieryValencia.jpeg" alt="Diery Valencia" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h2 class="text-xl font-bold text-white mb-1">Diery Valencia</h2>
+                        <p class="text-violet-400 font-medium mb-3">Full Stack Developer</p>
+                        <p class="text-gray-400 text-sm mb-4">
+                            Especialista en React, Node.js, Python y soluciones cloud con AWS.
+                        </p>
+                        <div class="flex items-center text-violet-400 font-medium">
+                            <span>Ver Portafolio</span>
+                            <svg class="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Portafolio 2 - Oskar Julian Ortiz Ortiz -->
+                <a href="portafolio-2.html" class="group bg-gray-900/50 border border-white/10 rounded-2xl overflow-hidden hover:border-violet-500/50 transition-all duration-300 card-hover">
+                    <div class="h-48 bg-gradient-to-br from-blue-900/30 to-yellow-900/20 flex items-center justify-center">
+                        <div class="w-24 h-24 rounded-full overflow-hidden border-4 border-violet-500/30">
+                            <img src="../img/young-smiling-man-buying-internet-holding-credit-card-paying-purchase-with-laptop-standing-blue-background.jpg" alt="Oskar Julian Ortiz Ortiz" class="w-full h-full object-cover object-top">
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h2 class="text-xl font-bold text-white mb-1">Oskar Julian Ortiz Ortiz</h2>
+                        <p class="text-violet-400 font-medium mb-3">Developer</p>
+                        <p class="text-gray-400 text-sm mb-4">
+                            AWS Cloud, Java, JavaScript, Python y TypeScript.
+                        </p>
+                        <div class="flex items-center text-violet-400 font-medium">
+                            <span>Ver Portafolio</span>
+                            <svg class="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-gray-500">© 2026 Mercado Libre. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
