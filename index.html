@@ -25,7 +25,7 @@
         <div class="hero-content">
             <h1>Bienvenido a Mercado Libre</h1>
             <p>La mejor plataforma de compras en línea con envíos rápidos y seguros</p>
-            <button class="btn btn-primary">Comienza a Comprar</button>
+            <button id="startShoppingButton" class="btn btn-primary">Comienza a Comprar</button>
         </div>
         <div class="hero-image">
             <img src="img/laptop-shopping-bags-online-shopping-concept.jpg" alt="Compras en línea">
@@ -103,6 +103,19 @@
         </div>
     </section>
 
+    <!-- Buscador de Productos -->
+    <section id="productos-buscador" class="container product-search-section">
+        <h2>Buscar productos</h2>
+        <input
+            type="text"
+            id="productSearchInput"
+            class="product-search-input"
+            placeholder="Escribe un producto, marca o categoria"
+            aria-label="Buscar productos"
+        >
+        <div id="productsContainer" class="products-grid" aria-live="polite"></div>
+    </section>
+
     <!-- Contacto -->
     <section id="contacto" class="contact">
         <div class="container">
@@ -142,6 +155,7 @@
             </div>
         </div>
     </footer>
+    <script src="app.js"></script>
 </body>
 </html>
 

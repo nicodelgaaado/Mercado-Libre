@@ -461,4 +461,97 @@ body {
     }
 }
 
+/* ==========================================
+   Buscador de Productos (Feature)
+   ========================================== */
+.product-search-section {
+    margin: 4rem auto;
+    padding: 2rem;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #f9fbff, #edf4ff);
+    border: 1px solid rgba(0, 61, 165, 0.12);
+    box-shadow: var(--shadow);
+}
+
+.product-search-section h2 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.product-search-input {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+    outline: none;
+    transition: var(--transition);
+}
+
+.product-search-input:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 4px rgba(0, 61, 165, 0.12);
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+}
+
+.product-card {
+    background: #ffffff;
+    border: 1px solid rgba(0, 61, 165, 0.12);
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(0, 61, 165, 0.16);
+}
+
+.product-card-title {
+    color: var(--secondary-color);
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-card-description {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin-bottom: 0.8rem;
+}
+
+.product-card-price {
+    color: #0d7a2d;
+    font-size: 1.1rem;
+}
+
+.products-empty-state {
+    grid-column: 1 / -1;
+    text-align: center;
+    border: 1px dashed #e0c96a;
+    border-radius: 10px;
+    background: #fffbe8;
+    color: #6d5600;
+    padding: 1rem;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .product-search-section {
+        margin: 2.5rem auto;
+        padding: 1.5rem;
+    }
+
+    .product-search-section h2 {
+        font-size: 1.6rem;
+    }
+}
+
 
